@@ -589,7 +589,7 @@ footer i:hover {
 
 
 /*Animation du Bienvu*/
-
+@media(min-width:600px) {
 .ml5 {
     position: relative;
     font-weight: 300;
@@ -631,3 +631,4 @@ footer i:hover {
     display: inline-block;
     opacity: 0;
   }
+      }

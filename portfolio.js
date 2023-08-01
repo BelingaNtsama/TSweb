@@ -45,6 +45,23 @@ window.addEventListener('scroll', () => {
 })
 
 window.addEventListener("DOMContentLoaded", (event) => {
+ if (window.matchMedia("(max-width:600px)").matches) {
+ const text = "Bienvenu sur TS<sub>web</sub>";
+        let index = 0;
+        let textez = document.querySelector("h1");
+
+        function afficherMot() {
+            textez.innerHTML = text.slice(0, index);
+            index++;
+
+            if (index > text.length) {
+                index = 0;
+            }
+        }
+
+        setInterval(afficherMot, 200);
+ }
+    
     if (window.matchMedia("(min-width:600px)").matches) {
         anime.timeline({ loop: true })
             .add({

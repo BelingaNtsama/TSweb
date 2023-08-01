@@ -46,7 +46,9 @@ window.addEventListener('scroll', () => {
 
 window.addEventListener("DOMContentLoaded", (event) => {
  if (window.matchMedia("(max-width:600px)").matches) {
- const text = "Bienvenu sur TS<sub>web</sub>";
+       let nom;
+        nom = prompt("Entrez votre prenom", " ");
+ const text = "Bienvenu"+ nom +" " + " sur TSweb";
         let index = 0;
         let textez = document.querySelector("h1");
 

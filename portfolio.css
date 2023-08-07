@@ -162,12 +162,14 @@ header h1 {
     border: 1px ridge rgba(0, 0, 0, 0.158);
     border-radius: 7px;
     transition: .6s ease;
+    transform: rotate rotateY(0deg);
     position: relative;
+    transform-origin: center;
 }
 
 .services:hover {
-    box-shadow: 3px 3px 3px 12px rgba(0, 0, 0, 0.199);
-    transform: translateZ(30px) scale(1.1);
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.199);
+    transform: rotate3D(2, 2, 15, 360deg) rotateY(360deg);
 }
 
 .services i {
@@ -200,9 +202,13 @@ header h1 {
 .services p {
     position: relative;
     top: 40px;
+display:none;
+transition: 0.6s ease-in-out;
 }
 
-
+.services:hover p {
+    display: block;
+}
 /* La partie competences */
 
 .skills {

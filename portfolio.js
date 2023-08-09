@@ -1,4 +1,3 @@
-
 window.addEventListener('scroll', () => {
     let image = document.getElementById('img');
 
@@ -43,12 +42,4 @@ window.addEventListener('scroll', () => {
 
 
 })
-
-
-         
-
-
-
-
-
 

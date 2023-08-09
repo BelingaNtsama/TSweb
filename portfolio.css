@@ -12,6 +12,10 @@ sub {
     display: initial;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -150,7 +154,7 @@ header h1 {
     flex-wrap: wrap;
     justify-content: space-around;
     position: relative;
-    gap: 5vh;
+    gap: 4vw;
     margin-top: 20vh;
     background-color: white;
 }
@@ -161,8 +165,8 @@ header h1 {
     height: 200px;
     border: 1px ridge rgba(0, 0, 0, 0.158);
     border-radius: 7px;
-    transition: .6s ease;
-    transform: rotate rotateY(0deg);
+    transform: rotateY(0deg);
+    transition: 1s ease;
     position: relative;
     transform-origin: center;
 }
@@ -185,13 +189,17 @@ header h1 {
     top: 10px;
     left: 120px;
     color: black;
-    transition: .6s ease;
+    transition: 1s ease;
 }
 
 .services:hover i {
     border: 1px solid var(--logo);
     color: white;
     background-color: var(--logo);
+}
+
+.services:hover p {
+    display: block;
 }
 
 .services h2 {
@@ -202,13 +210,11 @@ header h1 {
 .services p {
     position: relative;
     top: 40px;
-display:none;
-transition: 0.6s ease-in-out;
+    display: none;
+    transition: 0.6s ease-in-out;
 }
 
-.services:hover p {
-    display: block;
-}
+
 /* La partie competences */
 
 .skills {
@@ -569,7 +575,7 @@ footer i:hover {
         left: 0;
         width: 30%;
     }
-    
+}
 
 
 /* les addlist  */
@@ -583,7 +589,7 @@ footer i:hover {
         background-color: #fff;
     }
 
-    .scrollbar a{
+    .scrollbar a {
         margin-top: 2vh;
         margin-left: 2vw;
     }
@@ -595,4 +601,3 @@ footer i:hover {
 
 
 /*Animation du Bienvu*/
-
